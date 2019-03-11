@@ -1,0 +1,42 @@
+Objectif
+
+Souvenez-vous, dans l'un des problèmes précédents, vous disposiez d'une fonction mystérieuse obtenue par interpolation linéaire, et vous vouliez savoir combien de fois elle atteignait la valeur N/2. Maintenant, vous appliquez la fonction plusieurs fois, ce qui, vous l'espérez, améliorera l'efficacité de votre contre-mesure cryptographique en mélangeant mieux l'intervalle [0,N]. La question est alors : combien de fois est-ce que la fonction itérée passe-t-elle par la valeur N/2. Pour éviter de nombreux cas particuliers, on va se limiter à des valeurs de N impaires.
+
+
+
+Données
+
+Entrée
+
+Ligne 1 : un entier impair N entre 1 et 99.
+Ligne 2 : N+1 entiers (et non N, attention !) séparés par des espaces, indiquant f(0), f(1), …, f(N) (f étant votre fonction).
+Ligne 3 : un entier k entre 1 et 1000, le nombre d'itérations.
+
+Sortie
+
+Les trois derniers chiffres (en base 10) du nombre d'entrées différentes comprises entre 0 et N pour lesquelles f itérée k fois vaut N/2.
+
+La raison pour laquelle on vous demande seulement les 3 derniers chiffres est que quand le nombre d'itérations k est grand, le nombre de points sur lesquels la fonction itérée vaut N/2 peut devenir très grand.
+
+Exemple
+
+Pour N=5, considérons la fonction qui vaut :
+f(0) = 0, f(1) = 2, f(2) = 4, f(3) = 3, f(4) = 2, f(5) = 1
+
+f elle-même atteint 2,5 deux fois, mais la fonction qui renvoie f(f(f(x))) sur l'entrée x, elle, atteint 2,5 cinq fois. Dans la figure ci-dessous, on a représenté f en rouge et f itérée trois fois en bleu.
+
+
+
+Donc, sur l'entrée suivante :
+
+5
+0 2 4 3 2 1
+1
+
+votre code devra renvoyer 2, tandis que sur la suivante :
+
+5
+0 2 4 3 2 1
+3
+
+il devra renvoyer 5.

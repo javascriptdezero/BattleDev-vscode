@@ -1,0 +1,43 @@
+Objectif
+
+L'heure est venue de faire entrer votre ville dans le XXIème siècle en la dotant de transports en commun efficaces. Vous décidez donc de construire des lignes de tramway. Pour mener vos projets à bien, vous avez le droit de choisir le tracé que vous voulez (en expropriant quiconque se mettrait en travers de votre chemin).
+
+La technologie dont vous disposez a quelques contraintes : une ligne est composée de deux terminus (un départ et une arrivée) et vous ne pouvez pas réaliser deux lignes qui se croisent, ni deux lignes qui partagent un terminus.
+
+Les terminus potentiels des lignes de tramway sont les N portes de la ville. Celles-ci sont numérotées de 0 à N-1 en parcourant l'enceinte de la ville dans le sens des aiguilles d'une montre en partant d'un point arbitraire. Ainsi, un exemple de situation où la ligne de A à B (avec B > A) croise forcément celle de C à D (avec D > C) est quand A < C < B < D.
+
+Pour chaque paire de terminus, vous disposez d'une estimation du nombre de passagers qui emprunteraient une ligne de tramway reliant ces terminus, si elle existait (Ce nombre ne dépend pas de l'existence d'autres lignes). Votre but est de choisir un ensemble de lignes qui ne se croisent pas deux à deux, de sorte à maximiser la somme du nombre de passagers de l'ensemble des lignes.
+
+Indication : une solution en temps au plus cubique (O(N³)) est attendue.
+
+Données
+
+Entrée
+
+Ligne 1 : un entier N compris entre 3 et 100 inclus, représentant le nombre de terminus.
+Ligne 2 à N+1: N entiers compris entre 1 et 100 séparés par des espaces représentant le nombre de passagers qui prendraient le tramway reliant le terminus A au terminus B. Chaque ligne correspond à un terminus et chaque entier de la ligne correspond aux différents terminus (dans le même ordre que celui des lignes). On obtient ainsi une matrice carrée.
+
+Si on nomme t[A][B] le nombre de passagers qui emprunteraient la ligne de A à B, alors on vous garantit que :
+- t[A][B] == t[B][A] (autrement dit, la matrice est symétrique)
+- t[A][A] == 0
+
+
+Sortie
+
+Un entier représentant le nombre maximal de passagers qui seraient transportés en construisant de façon optimale vos lignes en respectant les contraintes de l'énoncé : deux lignes ne peuvent pas se croiser et chaque terminus ne peut être utilisé plus d'une fois.
+
+
+Exemple
+
+4<BR>
+0 2 6 1<BR>
+2 0 8 9<BR>
+6 8 0 3<BR>
+1 9 3 0<BR>
+
+
+Il y a deux choix optimaux, qui atteignent tous deux le nombre de 9 passagers transportés :
+- construire la ligne de 0 à 3 (1 passager) et celle de 1 à 2 (8 passagers) ;
+- construire une seule ligne, de 1 à 3.
+La réponse attendue est donc 9.
+Remarquez qu'il n'est pas possible de construire à la fois la ligne de 1 à 3 et celle de 0 à 2 (ce qui ferait au total 15 passagers) à cause d'un croisement.

@@ -1,0 +1,49 @@
+Objectif
+
+Depuis les diverses révélations au sujet de la NSA, vous ne faites plus confiance au générateur de nombres aléatoires de votre système d'exploitation. Vous avez donc mis en place la contre-mesure suivante : après avoir tiré un entier aléatoire, vous le passez à une fonction (déterministe) mystérieuse faite maison, qui associe à chaque entier entre 0 et N un autre entier entre 0 et N.
+
+Votre hiérarchie a été tellement séduite par la simplicité de cette idée qu'elle vous a demandé d'étendre cette fonction mystérieuse à des nombres décimaux. Pour cela, vous faites une interpolation linéaire sur chaque intervalle [i, i+1] (cf. exemple ci-dessous pour une explication).
+
+Toutefois, vous commencez à douter : les nombres proches du milieu de l'intervalle [0,N] n'apparaîtraient-ils pas plus souvent que ceux aux extrémités ? Ce serait un défaut fâcheux pour votre génération aléatoire. C'est pourquoi vous voulez déterminer le nombre de fois où la fonction passe par N/2.
+
+Exemple d'interpolation linéaire
+
+
+
+Le graphe ci-dessus représente la fonction interpolée à partir des valeurs :
+f(0) = 0, f(1) = 2, f(2) = 1, f(3) = 5, f(4) = 3, f(5) = 3
+
+On constate par exemple qu'entre 2 et 3, f prend toutes les valeurs de 1 à 5, chacune une fois. Donc, comme 1 < 2,5 < 5, il y a un x entre 2 et 3 tel que f(x) = 2,5.
+On voit aussi que la fonction prend la valeur 1,5 trois fois :
+- entre 0 et 1 puisque f(0) < 1,5 < f(1) ;
+- entre 1 et 2 puisque f(1) > 1,5 > f(2) ;
+- puis entre 2 et 3 puisque f(2) < 1,5 < f(3).
+
+De plus, elle prend la valeur 2 deux fois (une fois exactement en 1, puisque f(1) = 2, et une autre fois en un certain point compris entre 2 et 3, puisque f(2) < 2 < f(3)), et la valeur 3 une infinité de fois (en effet, toute entrée entre 4 et 5 donnera une sortie égale à 3, et il y a une infinité de nombres réels compris entre 4 et 5.).
+
+Données
+
+Entrée
+
+Ligne 1: un entier N entre 1 et 99.
+Ligne 2 : N+1 entiers (et non N, attention !) séparés par des espaces, indiquant f(0), f(1), …, f(N) (f étant votre fonction), tous sont compris entre 0 et N inclus.
+
+Sortie
+
+Un entier, le nombre d'entrées x différentes comprises entre 0 et N pour lesquelles f(x) vaut N/2. Si ce nombre est infini, écrivez INF sur la sortie.
+
+Exemple
+
+L'entrée correspondant à l'exemple donné plus haut est la suivante :
+
+5
+0 2 1 5 3 3
+
+La sortie attendue est 1, en effet il y a exactement un x pour lequel f(x) = 5/2 = 2,5, comme dit plus haut ce x est compris entre 2 et 3.
+
+Sur l'entrée suivante :
+
+4
+0 2 2 1 0
+
+La sortie attendue est INF.

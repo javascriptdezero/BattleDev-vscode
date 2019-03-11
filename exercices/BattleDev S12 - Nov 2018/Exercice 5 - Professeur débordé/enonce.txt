@@ -1,0 +1,46 @@
+Objectif
+
+Vos élèves sont énervés, ils vous accusent d'annuler des cours en permanence et vous accablent de mauvais commentaires sur internet. Vous allez devoir arrêter d'accepter des étudiants si vous ne pouvez pas donner cours à chacun d'entre eux individuellement. Comme pour l'exercice précédent, tous les étudiants vous donnent deux créneaux de 60 minutes et vous devez leur donner cours sur l'un des deux créneaux. Cette fois-ci, tout ce qui vous intéresse c'est de savoir s'il vous est possible de donner cours à tout le monde et le cas échéant sur quels créneaux.
+
+Attention : le nombre d'étudiants est beaucoup plus grand que dans l'exercice précédent, votre solution doit s'exécuter en temps polynomial.
+
+Données
+
+Entrée
+
+Ligne 1 : un entier N entre 3 et 1000 inclus, le nombre d'étudiants.
+Lignes 2 à N+1 : deux entiers entre 0 et 300.000, les deux débuts de créneaux (en minutes) auxquels un étudiant est disponible, chaque créneau a une durée de 60 minutes à partir des débuts indiqués (vos journées sont très longues).
+
+Sortie
+
+Vous afficherez simplement KO s'il est impossible de donner cours à tout le monde.
+S'il est possible de donner cours à tout le monde, vous indiquerez, pour chaque étudiant, sur quel créneau vous lui donnerez cours 1 ou 2 dans le même ordre qu'en entrée (on acceptera toutes les solutions possibles). Vous pouvez séparer les étudiant par des sauts de lignes.
+
+Exemple
+
+Pour l'entrée suivante :
+5
+205 300
+210 370
+290 380
+120 305
+390 110
+La réponse attendue est KO, quel que soit le créneau choisi pour chaque étudiant, il y aura toujours deux créneaux qui se chevauchent. 
+
+Pour l'entrée suivante :
+4
+205 300
+210 370
+290 380
+120 305
+Il est possible de donner cours à tous :
+- L'étudiant 1 sur son premier créneau de 205 à 265
+- L'étudiant 2 sur son second créneau de 370 à 430
+- L'étudiant 3 sur son premier créneau de 290 à 350
+- L'étudiant 4 sur son premier créneau de 120 à 180
+
+La réponse attendue pour ces 4 étudiants est donc :
+1
+2
+1
+1

@@ -1,0 +1,15 @@
+Énoncé
+
+Finalement, pour créer sa société, il n'est pas nécessaire d'avoir une idée. On peut prendre une idée qui marche déjà et refaire la même chose. Ensuite, il suffit d'acheter des clics et d'avoir un e-marketing performant. Vous voyez donc les choses en grand : vous allez clôner ebay car faire un site d'enchères ce n'est pas bien compliqué. On reçoit des enchères, on vérifie qu'elles sont strictement supérieures au prix de réserve et on détermine le nom du gagnant à la fin.
+
+Format des données
+
+Entrée
+
+Ligne 1 : un entier N compris entre 2 et 1 000 correspondant au nombre d'enchères reçues.
+Ligne 2 : un entier compris entre 1 et 500 correspondant au prix de réserve de l'objet.
+Lignes 3 à N+2 : un entier P compris entre 1 et 10 000 et une chaîne de caractères E séparés par un espace où P correspond au prix de l'enchère et E correspond au prénom de l’enchérisseur.
+
+Sortie
+
+Une chaîne de caractères correspondant au prénom de vainqueur. Si personne ne remporte l'enchère (car toutes les offres sont inférieures ou égales au prix de réserve), renvoyez KO. On vous garantit que s'il y a un vainqueur, alors il n'y en a qu'un seul.

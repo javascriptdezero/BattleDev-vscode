@@ -1,0 +1,34 @@
+Objectif
+
+Vous vous êtes enfin décidé à monétiser vos connaissances en algorithmique en proposant des cours particuliers à des parents remplis d'espoirs injustifiés. Vous devenez rapidement très populaire, trop populaire, vous n'êtes plus sûr de pouvoir assurer tous vos cours. Pour avoir plus de chance d'acquérir votre savoir, tous vos élèves vous proposent deux créneaux de 60 minutes pendant lesquels ils sont disponibles, vous ne pourrez leur donner cours que sur un seul de ces deux créneaux (si vous avez le temps). 
+
+Sachant que vous ne pouvez donner cours qu'à un seul élève en même temps et que vous ne pouvez pas commencer un cours et en terminer un autre à la même minute, combien d'élèves différents pouvez-vous prendre au maximum ?
+
+Indication : vous pouvez procéder par énumération exhaustive (force brute).
+
+Données
+
+Entrée
+
+Ligne 1 : un entier N entre 3 et 8 inclus, le nombre d'étudiants.
+Lignes 2 à N+1 : deux entiers entre 0 et 1000 inclus, les deux débuts de créneaux (en minutes) auxquels un étudiant est disponible, chaque créneau a une durée de 60 minutes à partir des débuts indiqués.
+
+Sortie
+
+Le nombre maximum d'étudiant différents qu'il est possible de prendre.
+
+Exemple
+
+Pour l'entrée suivante :
+5
+205 300
+210 370
+290 380
+120 305
+390 110
+La réponse attendue est 4. Vous pourrez par exemple prendre les 4 étudiants suivants :
+- L'étudiant 1 sur son premier créneau de 205 à 265
+- L'étudiant 2 sur son second créneau de 370 à 430
+- L'étudiant 3 sur son premier créneau de 290 à 350
+- L'étudiant 4 sur son premier créneau de 120 à 180
+Il est possible de prendre d'autres combinaisons de 4 étudiants sur différents créneaux, mais il n'en existe aucune à 5 étudiants.
