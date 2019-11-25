@@ -1,0 +1,47 @@
+Énoncé
+
+Récemment, votre clavier s'est mis à souffrir d'un fâcheux défaut : il arrive que des appuis sur des touches ne soient pas enregistrés. Par conséquent, vous qui aviez pris l'habitude de taper à toute vitesse sans vous relire, vous constatez maintenant quelques lettres manquantes dans vos textes.
+
+Heureusement, la plupart du temps, le contexte permet de retrouver quel mot était censé se trouver là. Vous vous demandez donc quelles ambiguïtés sont susceptibles d'apparaître. Étant donnée une liste de mots, vous cherchez à savoir s'il est possible de tous les confondre en supprimant des lettres au milieu.
+
+Objectif
+
+L'objectif de ce challenge est donc de trouver une suite de lettres qui se retrouvent, dans le même ordre, dans tous mots de la liste en entrée. On voudrait que cette suite soit la plus longue possible, autrement dit que l'obtenir à partir des mots donnés implique le moins de suppressions de lettres possible. (Pour simplifier, dans cet exercice, les mots de la liste seront tous de longueur 10.)
+
+Indication : vous pouvez procéder par énumération exhaustive (force brute).
+
+Données
+
+Entrée
+
+Ligne 1 : un entier N entre 2 et 100, le nombre de mots différents.
+Lignes 2 à N+1 : sur chaque ligne, une chaîne de 10 caractères constituée uniquement des 26 lettres de l'alphabet en minuscule.
+
+Sortie
+
+Une suite de caractères de longueur maximale qui pourrait être obtenue à partir des mots en entrée par suppression de caractères.
+Si les mots n'ont aucune lettre commune, affichez KO.
+
+Exemple
+
+Sur l'entrée suivante :
+3
+artificiel
+algorithme
+algebrique
+
+Tous les 3 mots ci-dessus peuvent donner arie en supprimant 6 caractères. En supprimant 5 caractères ou moins, on ne pourrait pas obtenir une suite de lettres commune aux trois mots. C'est donc arie qu'il faut afficher.
+
+Si l'entrée avait été :
+2
+artificiel
+algorithme
+
+Alors les réponses arie et arte auraient toutes les deux été acceptées.
+
+Enfin, sur l'entrée suivante :
+2
+algorithme
+algebrique
+
+La réponse attendue est algrie.
