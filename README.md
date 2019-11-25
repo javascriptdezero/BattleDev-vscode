@@ -1,20 +1,21 @@
 # Faites la Battle Dev depuis Visual Studio Code !
 
-Ce script NodeJS vous permet de faire et de tester les exercices de la [Battle Dev](https://battledev.blogdumoderateur.com/) directement depuis VSCode.
+Ce script NodeJS vous permet de tester vos réponses aux exercices de la [Battle Dev](https://battledev.blogdumoderateur.com/) directement depuis VSCode.
 
-Il s'appuie sur les fichiers d'exemple fournis lors de la Battle Dev pour coder en local les réponses aux exercices.
-
-![Lien pour télécharger les fichiers exemple](./images/fichiers-exemple.jpg)
+Il s'appuie sur les fichiers d'exemple fournis lors de la Battle Dev pour tester en local, depuis VSCode, votre code.
 
 ## Quel intérêt ?
 
-L'éditeur fourni lors de la Battle Dev ne permet pas de déboguer et est très sommaire. C'est beaucoup plus confortable de coder dans son IDE préféré avec toutes les extensions qui facilitent le développement.
+L'éditeur fourni lors de la Battle Dev ne permet pas de déboguer et est très sommaire. C'est beaucoup plus confortable de coder dans son IDE préféré avec toutes les extensions qui facilitent le développement, l'auto-complétion etc.
 
 ## Comment ça marche ?
 
 Lors de la prochaine Battle Dev, il vous suffira de suivre les étapes suivantes pour faire un exercice :
 
 1. Téléchargez le fichier ZIP d'exemple et décompressez son contenu dans le dossier `tests` (ça devrait être un ensemble de fichiers nommés `input1.txt`, `input2.txt` etc. et `output1.txt`, `output2.txt` etc.).
+
+![Lien pour télécharger les fichiers exemple](./images/fichiers-exemple.jpg)
+
 2. Développez le code répondant à l'exercice dans la fonction `ContestResponse` du fichier `code.js` :
 
 ```javascript
@@ -26,7 +27,7 @@ function ContestResponse() {
 ```
 
 3. Affichez vos réponses en utilisant `console.log`.
-4. Lancez le script node `run.js` depuis VSCode (raccourci clavier CTRL+F5 ou F5 pour déboguer).
+4. Lancez le script node `run.js` depuis VSCode (raccourci clavier `CTRL+F5` ou `F5` pour déboguer).
 5. Vérifier le résultat dans la console de débogage.
 6. Si tous les tests passent, vous pouvez copier-coller votre code (contenu dans `ContestResponse` + vos fonctions) dans l'éditeur officiel de la Battle Dev et valider. Sinon retournez à l'étape 2.
 7. Une fois que votre exercice est validé, supprimez votre code dans `code.js`, supprimez tous les fichiers dans le dossier `tests`.
@@ -44,7 +45,7 @@ Tous les tests réussis : ![Aucun test réussi](./images/tout.jpg)
 
 ## Adaption du code à faire le jour J
 
-Je me suis basé sur le fonctionnement de l'éditeur du dernier Battle Dev datant de Novembre 2018.
+Je me suis basé sur le fonctionnement de l'éditeur de la dernière Battle Dev datant de Mars 2019.
 
 Il se peut que des modifications aient été apportées pour la prochaine édition et qu'il faille par exemple changer l'instruction permettant d'afficher le résultat (`console.log`) ou d'afficher les infos de débogage (`console.error`).
 
@@ -56,15 +57,9 @@ Vérifiez la façon dont vous devrez soumettre vos résultats en regardant en ha
 
 Changez ce qui est nécessaire dans le script pour que ça fonctionne.
 
-## Tests du script
-
-J'ai testé le script avec tous les exercices possédant des solutions en JavaScript provenant des saisons 11 et 12 de la Battle Dev.
-
-Les exercices 5 et 6 de la saison 11 et les exercices 4,5 et 6 de la saison 12 ne possédant pas de solutions en JavaScript je ne les ai pas testé avec mon script.
-
 ## Exercices des années précédentes
 
-J'ai compilé pour vous les énoncés (sans les images) et tous les fichiers de test des saisons 11 et 12 de la Battle Dev dans le dossier `exercices`.
+J'ai compilé pour vous les énoncés (sans les images) et tous les fichiers de test des saisons 11, 12 et 13 de la Battle Dev dans le dossier `exercices`.
 
 Vous pouvez les utiliser pour vous entraîner !
 
@@ -78,7 +73,7 @@ N'hésitez pas à partager ce dépôt sur les réseaux sociaux et à cliquer l'�
 
 Vous pouvez également me faire un petit coucou sur Twitter : [@JeremyMouzin](https://twitter.com/jeremymouzin).
 
-Notez également que je streamerai en live ma participation à la Battle Dev dans un but pédagogique le 26 Mars 2019 à 20h sur [ma chaîne YouTube](https://www.youtube.com/channel/UCMzJVrWeaKUotLPWTdx6HuQ).
+Notez également que je streamerai en live ma participation à la Battle Dev dans un but pédagogique le 26 Novembre 2019 à 20h sur [ma chaîne YouTube](https://www.youtube.com/channel/UCMzJVrWeaKUotLPWTdx6HuQ).
 
 ## Je code en Français, voici pourquoi
 
