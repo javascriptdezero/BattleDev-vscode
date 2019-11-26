@@ -1,8 +1,10 @@
 # Faites la Battle Dev depuis Visual Studio Code !
 
-Ce script NodeJS vous permet de tester vos réponses aux exercices de la [Battle Dev](https://battledev.blogdumoderateur.com/) directement depuis VSCode.
+Ce script NodeJS vous permet de tester vos réponses (en langage JavaScript) aux exercices de la [Battle Dev](https://battledev.blogdumoderateur.com/) directement depuis VSCode.
 
-Il s'appuie sur les fichiers d'exemple fournis lors de la Battle Dev pour tester en local, depuis VSCode, votre code.
+Il s'appuie sur les fichiers d'exemple fournis lors de la Battle Dev pour tester en local, depuis VSCode, votre code, en JavaScript.
+
+> Si vous utilisez un autre langage que le JavaScript, vous pouvez vous inspirer de mon script pour l'adapter à votre langage préféré.
 
 ## Quel intérêt ?
 
