@@ -61,7 +61,7 @@ Changez ce qui est nécessaire dans le script pour que ça fonctionne.
 
 ## Exercices des années précédentes
 
-J'ai compilé pour vous les énoncés (sans les images) et tous les fichiers de test des saisons 11, 12 et 13 de la Battle Dev dans le dossier `exercices`.
+J'ai compilé pour vous les énoncés et tous les fichiers de test des saisons 11, 12, 13, et 14 de la Battle Dev dans le dossier `exercices`.
 
 Vous pouvez les utiliser pour vous entraîner !
 
