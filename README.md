@@ -14,7 +14,7 @@ L'éditeur fourni lors de la Battle Dev ne permet pas de déboguer et est très 
 
 Lors de la prochaine Battle Dev, il vous suffira de suivre les étapes suivantes pour faire un exercice :
 
-1. Téléchargez le fichier ZIP d'exemple et décompressez son contenu dans le dossier `tests` (ça devrait être un ensemble de fichiers nommés `input1.txt`, `input2.txt` etc. et `output1.txt`, `output2.txt` etc.).
+1. Téléchargez le fichier ZIP d'exemple dans le dossier `tests`. Décompressez son contenu dans le dossier `tests` (ça devrait être un ensemble de fichiers nommés `input1.txt`, `input2.txt` etc. et `output1.txt`, `output2.txt` etc.). Vous pouvez utiliser le script bash `autounzip.sh` pour accélérer ce processus.
 
 ![Lien pour télécharger les fichiers exemple](./images/fichiers-exemple.jpg)
 
