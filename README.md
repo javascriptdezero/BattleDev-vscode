@@ -10,6 +10,8 @@ Il s'appuie sur les fichiers d'exemple fournis lors de la Battle Dev pour tester
 
 L'éditeur fourni lors de la Battle Dev ne permet pas de déboguer et est très sommaire. C'est beaucoup plus confortable de coder dans son IDE préféré avec toutes les extensions qui facilitent le développement, l'auto-complétion etc.
 
+Par ailleurs, si vous êtes débutant, vous pouvez vous entraîner et lire mes solutions commentées !
+
 ## Comment ça marche ?
 
 Lors de la prochaine Battle Dev, il vous suffira de suivre les étapes suivantes pour faire un exercice :
@@ -59,9 +61,9 @@ Vérifiez la façon dont vous devrez soumettre vos résultats en regardant en ha
 
 Changez ce qui est nécessaire dans le script pour que ça fonctionne.
 
-## Exercices des années précédentes
+## Exercices des saisons précédentes
 
-J'ai compilé pour vous les énoncés et tous les fichiers de test des saisons 11, 12, 13, et 14 de la Battle Dev dans le dossier `exercices`.
+J'ai compilé pour vous les énoncés et tous les fichiers de test des saisons 11, 12, 13, 14 et 15 de la Battle Dev dans le dossier `exercices`.
 
 Vous pouvez les utiliser pour vous entraîner !
 
