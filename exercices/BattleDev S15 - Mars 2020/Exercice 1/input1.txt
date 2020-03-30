@@ -1,0 +1,7 @@
+6
+rouge
+jaune
+bleu
+rouge
+jaune
+rouge

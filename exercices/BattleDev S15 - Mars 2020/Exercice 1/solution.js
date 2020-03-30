@@ -17,7 +17,8 @@ function LocalPrintArray(chaine) {
 
 // -- Développez votre code dans la fonction ContestResponse ci-après
 function ContestResponse() {
-  // Implémentez votre code ci-dessous
+  // Voici le code produit lors du live de la BattleDev
+
   // rouge : 3
   // jaune : 2
   // bleu : 1
