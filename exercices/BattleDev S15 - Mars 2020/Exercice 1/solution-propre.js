@@ -17,8 +17,8 @@ function LocalPrintArray(chaine) {
 
 // -- Développez votre code dans la fonction ContestResponse ci-après
 function ContestResponse() {
-  // Voici le code revisité de ma solution du live, plus propre et commenté
-  // Il est un peu différent de la version du live
+  // Voici une solution plus propre et commentée que celle que j'ai faite
+  // en live. Vous pouvez voir le live ici : https://www.youtube.com/watch?v=4KFebrVWZ54
 
   /*
   Rappel : on récupère les données d'entrée sous la forme d'un tableau
