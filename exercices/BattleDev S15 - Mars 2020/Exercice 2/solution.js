@@ -17,7 +17,13 @@ function LocalPrintArray(chaine) {
 
 // -- Développez votre code dans la fonction ContestResponse ci-après
 function ContestResponse() {
-  // Implémentez votre code ci-dessous
+  // Voici le code produit lors du live de la BattleDev, vous pouvez le voir
+  // sur YouTube ici : https://www.youtube.com/watch?v=4KFebrVWZ54
+
+  // Note: les 4 jeux de tests originaux ne prenaient pas en compte les cas
+  // particuliers où il n'y a aucun tirage, 1 seul tirage et N tirages identiques.
+  // J'ai donc ajouté 3 jeux de test supplémentaires : input5.txt, input6.txt,
+  // et input7.txt avec leur réponse associée output5.txt, output6.txt et output7.txt.
 
   // Cas particuliers :
   // 0 tirages => 0
