@@ -11,6 +11,7 @@ Il s'appuie sur les fichiers d'exemple fournis lors de la Battle Dev pour tester
 L'éditeur fourni lors de la Battle Dev ne permet pas de déboguer et est très sommaire. C'est beaucoup plus confortable de coder dans son IDE préféré avec toutes les extensions qui facilitent le développement, l'auto-complétion etc.
 
 Par ailleurs, si vous êtes débutant, vous pouvez vous entraîner et lire mes solutions commentées !
+Je fais les BattleDev en live en expliquant étape par étape mon raisonnement pour chaque exercice. Vous pouvez regarder ces lives dans cette playlist : [live BattleDev sur YouTube](https://www.youtube.com/watch?v=4KFebrVWZ54&list=PLyj4q0fkISxDmPFZogUXvDAG2gzzcTWjS).
 
 ## Comment ça marche ?
 
