@@ -62,8 +62,8 @@ while (fs.existsSync(fichierEntree) && fs.existsSync(fichierSortie) && succes) {
   console.log(`-- Valeurs d'entrée --\n${contenuEntree}`);
 
   // On travaille avec des lignes sous forme de tableaux
-  contenuEntree = contenuEntree.split("\n");
-  contenuSortie = contenuSortie.split("\n");
+  contenuEntree = contenuEntree.split(/\r?\n/g);
+  contenuSortie = contenuSortie.split(/\r?\n/g);
 
   // On fournit à code.js les valeurs d'entrée
   code.initInput(contenuEntree);
