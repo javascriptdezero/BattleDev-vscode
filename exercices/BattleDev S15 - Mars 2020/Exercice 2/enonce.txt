@@ -1,0 +1,37 @@
+Objectif
+
+En balade à Las Vegas, vous tombez sur un stand avec un jeu simple : le croupier mélange le jeu de carte (limité aux cartes de 1 à 9) et en tire une au hasard.
+Avant le tirage, si vous aviez annoncé le bon chiffre, vous remportez huit fois votre mise, sinon vous perdez votre argent.
+
+Vous savez que les gains potentiels sur ce type de jeu sont très faibles mais votre ami, n'est pas du même avis. Il se lance !
+Quitte à le regarder jouer, vous lui conseillez de jouer les chiffres qui tombent souvent consécutivement 
+(il n'y a pas vraiment d'explication pour cette méthode, mais bon, cela fait au moins une stratégie).
+ Vous étudiez donc les tirages passés qui sont affichés sur un écran au-dessus de la table pour déterminer la longueur de la plus grande série où un chiffre est répété.
+
+Données
+
+Entrée
+
+Ligne 1 : un entier N compris entre 1 et 10 000 correspondant au nombre de tirages affichés dans l'historique.
+Lignes 2 à N+1 : un chiffre entre 1 et 9 correspondant au numéro de la carte tirée.
+
+Sortie
+
+Un nombre correspondant à la longueur de la plus grande série où un chiffre est répété.
+
+Exemple
+
+Pour l'entrée :
+10
+5
+3
+3
+4
+9
+9
+9
+9
+9
+6
+
+La sortie sera 5, car la plus longue série où un chiffre s'est répété est lorsque le 9 est tombé 5 fois de suite.
